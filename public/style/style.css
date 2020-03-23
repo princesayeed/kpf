@@ -1,0 +1,44 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main {
+    animation-name: bg;
+    animation-duration: 28s;
+}
+
+.anim {
+    font-size: 22px;
+    animation-name: example;
+    animation-duration: 14s;
+  }
+  
+  @keyframes example {
+    0%{font-size: 22px; color: #000;}
+    80% {font-size: 52px; color: #AC5F56;}
+    100% {display: none;}
+  }
+
+  @keyframes bg {
+
+    0%{background: #fff ;}
+    50%{ background: url("/img/paint.jpg") cover;}
+  }
+
+ .image {
+    animation: rotation 5s infinite linear;
+    transform: scale(2.5);
+    overflow: hidden;
+ }
+
+ @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
